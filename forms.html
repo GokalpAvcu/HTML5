@@ -1,99 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Formlar</title>
+    <title>Hemen Üye Ol</title>
 </head>
-
 <body>
-
-    <form action="/Home/Register">
-
-
-        <p>
-            Ad :<input type="text" name="ad" placeholder="adınızı giriniz">
-        </p>
-
-
-        <p>
-
-            Soyad :<input type="text" name="soyad" required>
-
-        </p>
-        
-        <p>
-            
-            Eposta <input type="email" name="email" required>
-            
-        </p>
-
-
-        <p>
-
-            Beni Hatırla :<input type="checkbox" name="benihatirla">
-        </p>
-
-        <p>
-
-            Erkek <input type="radio" name="cinsiyet">
-            Kadın <input type="radio" name="cinsiyet">
-        </p>
-
-        <p>
-            Hobiler <br>
-
-            Sinema <input type="checkbox" name="hobi">
-            Spor <input type="checkbox">
-            Kitap Okumak <input type="checkbox">
-
-
-
-        </p>
-
-        <p>
-            <select>
-                <option>Kocaeli</option>
-                <option>İstanbul</option>
-                <option>Ankara</option>
-            </select>
-
-        </p>
-
-        <p>
-            <select multiple name="sehirler">
-                <option>Kocaeli</option>
-                <option>İstanbul</option>
-                <option>Ankara</option>
-
-
-
-            </select>
-
-
-
-
-
-        </p>
-
-        <input type="submit" value="Kaydet">
-
-
-
-
-
-
-
-
-
-
-    </form>
-
-
-
-
-
-
+  
+  <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+  <hr>
+   
+   <form>
+      
+      <h4>Hesap Bilgileriniz</h4>
+      <p>
+          Kullanıcı Adı : <input type="text" name="username" placeholder="Kullanıcı adı giriniz" required>
+      </p>
+      
+      <p>
+          Eposta : <input type="email" name="eposta" placeholder="Eposta giriniz" required>
+      </p>
+      
+      <p>
+          Parola : <input type="password" name="parola" placeholder="parola giriniz" required>
+      </p>
+    
+       <h4>Kişisel Bilgileriniz</h4>
+       
+       <p>
+          Ad: <input type="text" name="ad">
+       </p>
+       <p>
+           Soyad :<input type="text" name="soyad">
+       </p>
+       <p>
+           Şehir :
+           <select name="sehir">
+              <option>Şehir Seçimi Yapınız</option>
+               <option>İstanbul</option>
+               <option>Antalya</option>
+               <option>Malatya</option>
+           </select>
+       </p>
+       
+       <p>
+           
+           Cinsiyet : <input type="radio" name="cinsiyet"> Erkek
+           <input type="radio" name="cinsiyet"> Kadın
+       </p>
+       
+       <p>
+           Hobileriniz:
+           <input type="checkbox" name="hobiler">Sinema
+           <input type="checkbox" name="hobiler">Gezmek
+           <input type="checkbox" name="hobiler">Spor
+       </p>
+       
+       <input type ="submit" value="Kaydet"
+       
+       
+       
+       
+       
+       
+       
+   </form>
+   
+   
+   
+   
+   
+    
 </body>
-
 </html>
